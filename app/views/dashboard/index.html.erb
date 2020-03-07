@@ -1,0 +1,9 @@
+<%= @vlc.playlist.inspect %>
+<br />
+<%= form_tag control_path, method: :post do %>
+<%= text_field_tag :url, "http://127.0.0.1:8000/studiosessions.ogg" %>
+<%= submit_tag "Enqueue Traktor Stream" %>
+<% end %>
+<br />
+<br />
+<iframe src="http://music.thecelebration.ca:8080/" width="1200" height="600" frameborder="0"></iframe>
